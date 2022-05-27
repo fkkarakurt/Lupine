@@ -1,13 +1,13 @@
 /**
- * File              : CoreWindowsInc.h
+ * File              : LupineCoreWindowsInc.h
  * Author            : Fatih Küçükkarakurt <fatihkucukkarakurt@gmail.com>
  * Date              : 27.05.2022
  * Last Modified Date: 27.05.2022
  * Last Modified By  : Fatih Küçükkarakurt <fatihkucukkarakurt@gmail.com>
  */
 
-#ifndef __CORE_WINDOWSINCLUDES_H__
-#define __CORE_WINDOWSINCLUDES_H__
+#ifndef __LPCORE_WINDOWSINCLUDES_H__
+#define __LPCORE_WINDOWSINCLUDES_H__
 #pragma once
 
 #ifndef WINVER
@@ -61,4 +61,4 @@
 #undef PostMessage
 #undef FindNextFile
 
-#endif // __CORE_WINDOWSINCLUDES_H__
+#endif // __LPCORE_WINDOWSINCLUDES_H__

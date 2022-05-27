@@ -1,13 +1,13 @@
 /**
- * File              : Linux.h
+ * File              : LupineCoreLinux.h
  * Author            : Fatih Küçükkarakurt <fatihkucukkarakurt@gmail.com>
  * Date              : 26.05.2022
  * Last Modified Date: 26.05.2022
  * Last Modified By  : Fatih Küçükkarakurt <fatihkucukkarakurt@gmail.com>
  */
 
-#ifndef __CORE_LINUX_H__
-#define __CORE_LINUX_H__
+#ifndef __LPCORE_LINUX_H__
+#define __LPCORE_LINUX_H__
 #pragma once
 
 #define LP_WARNING_PUSH
@@ -55,17 +55,17 @@ const class
 
 
 #if defined(HAVE_VISIBILITY_ATTR) && !defined(CORE_STATIC)
-	#define CORE_TMPL __attribute__ ((visibility("default")))
-	#define CORE_PLUGIN_API __attribute__ ((visibility("define")))
+	#define LPCORE_TMPL __attribute__ ((visibility("default")))
+	#define LPCORE_PLUGIN_API __attribute__ ((visibility("define")))
 #else
-	#define CORE_TMPL
-	#define CORE_PLUGIN_API
+	#define LPCORE_TMPL
+	#define LPCORE_PLUGIN_API
 #endif
 
 
 
 
-namespace LupiceCore
+namespace LupineCore
 {
 	typedef char int8;
 	typedef unsigned char uint8;
@@ -86,7 +86,7 @@ namespace LupiceCore
 }
 
 
-static const Core::handle NULL_HANDLE = 0;
-static const Core::handle INVALID_HANDLE = -1;
+static const LupineCore::handle NULL_HANDLE = 0;
+static const LupineCore::handle INVALID_HANDLE = -1;
 
-#endif // __CORE_LINUX_H__
+#endif // __LPCORE_LINUX_H__

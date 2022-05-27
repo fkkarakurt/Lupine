@@ -1,13 +1,13 @@
 /**
- * File              : CoreWindows.h
+ * File              : LupineCoreWindows.h
  * Author            : Fatih Küçükkarakurt <fatihkucukkarakurt@gmail.com>
  * Date              : 27.05.2022
  * Last Modified Date: 27.05.2022
  * Last Modified By  : Fatih Küçükkarakurt <fatihkucukkarakurt@gmail.com>
  */
 
-#ifndef __CORE_WINDOWS_H__
-#define __CORE_WINDOWS_H__
+#ifndef __LPCORE_WINDOWS_H__
+#define __LPCORE_WINDOWS_H__
 #pragma once
 
 #ifndef __MINGW32__
@@ -64,12 +64,12 @@ LP_WARNING_DISABLE(4481)
 #define LP_GENERIC_RTTI_EXPORT 1
 #define LP_GENERIC_API_IMOPORT __declspec(dllimport)
 #define LP_GENERIC_RTTI_IMPORT 0
-#define CORE_TMPL
+#define LPCORE_TMPL
 
-#ifndef CORE_STATIC
-	#define CORE_PLUGIN_API
+#ifndef LPCORE_STATIC
+	#define LPCORE_PLUGIN_API
 #else
-	#define CORE_PLUGIN_API __declspec(dllexport)
+	#define LPCORE_PLUGIN_API __declspec(dllexport)
 #endif
 
 
@@ -104,4 +104,4 @@ namespace LupineCore
 
 LP_WARNING_DISABLE(4355)
 
-#endif // __CORE_WINDOWS_H__
+#endif // __LPCORE_WINDOWS_H__
