@@ -92,3 +92,7 @@ namespace LupineMath
     };
 
 } // LupineMath
+
+#include "LupineMath/Math.inl"
+
+#endif // __LPMATH_MATH_H__
