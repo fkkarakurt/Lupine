@@ -12,18 +12,18 @@
 
 
 // For Windows Platform
-#ifndef WIN32
-	#include "LupineCore/LupineCoreWindows.h"
-#endif
+#ifdef WIN32
+		#include "LupineCore/LupineCoreWindows.h"
+#endif //WIN32
 
 
 // For Linux Platform
-#ifndef LINUX
+#ifdef LINUX
 	#include "LupineCore/LupineCoreLinux.h"
-#endif
+#endif //LINUX
 
 
-#ifndef LPCORE_STATIC
+#ifdef LPCORE_STATIC
 	#define LPCORE_API
 	#define LPCORE_RTTI_EXPORT 1
 #elif defined(LPCORE_EXPORTS)
