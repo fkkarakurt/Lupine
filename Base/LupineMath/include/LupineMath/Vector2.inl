@@ -392,7 +392,7 @@ namespace LupineMath
     inline float Vector2::GetSquaredDistance(const Vector2 &vV) const
     {
         const float fDX = vV.x - x;
-        const float fDY = vV.y - y;
+        const float fDY = vV.y - y;    
         return fDX * fDX + fDY * fDY;
     }
 
