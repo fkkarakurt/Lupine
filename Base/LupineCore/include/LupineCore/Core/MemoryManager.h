@@ -36,7 +36,7 @@ namespace LupineCore
 			static inline int Compare(const void *pFirstBuffer,const void *SecondBuffer, uint32 nNumOfBytes);
 			static inline void *Reallocator(void *pAddress, size_t nNumOfBytes, EType nType = NewArray, const char *pszSourceFile = nullptr, int nSourceLine = -1);
 			static inline void *Allocator(EType nType, size_t nNumOfBytes, const char *pszSourceFile = nullptr, int nSourceLine = -1);
-		       	static inline void Deallocator(EType nType, void *pAddress, const char *pszSourceFile = nullptr, int nSourceLine = -1);
+		  static inline void Deallocator(EType nType, void *pAddress, const char *pszSourceFile = nullptr, int nSourceLine = -1);
 	};
 }
 
