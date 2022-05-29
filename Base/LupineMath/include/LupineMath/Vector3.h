@@ -169,4 +169,7 @@ namespace LupineCore
 
 } // LupineCore
 
+#include "LupineMath/Vector3.inl"
+#include "LupineMath/TypeVector3.inl"
+
 #endif // __LPMATH_VECTOR3_H__
