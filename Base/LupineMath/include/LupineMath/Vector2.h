@@ -85,7 +85,7 @@ namespace LupineMath
     inline Vector2 &operator /=(const Vector2 &vV);
 		inline Vector2 &operator /=(float fS);
     inline operator float *();
-		inline operator const float *() const;
+    inline operator const float *() const;
 		inline float &operator [](int nIndex);
 		inline const float &operator [](int nIndex) const;
 		inline void  GetXY(float &fX, float &fY) const;
