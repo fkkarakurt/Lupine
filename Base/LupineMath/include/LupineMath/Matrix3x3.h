@@ -50,34 +50,34 @@ namespace LupineMath
     LPMATH_API bool CompareScale(const Matrix3x3 &mM, float fEpsilon = Math::Epsilon) const;
     LPMATH_API bool CompareRotation(const Matrix3x3 &mM, float fEpsilon = Math::Epsilon) const;
 
-    inline Matrix3x3      &operator =(const float fS[]);
-    inline Matrix3x3      &operator =(const Matrix3x3 &mM);
+    inline Matrix3x3 &operator =(const float fS[]);
+    inline Matrix3x3 &operator =(const Matrix3x3 &mM);
 
-    LPMATH_API Matrix3x3  &operator =(const Matrix3x4 &mM);
-    LPMATH_API Matrix3x3  &operator =(const Matrix4x4 &mM);
+    LPMATH_API Matrix3x3 &operator =(const Matrix3x4 &mM);
+    LPMATH_API Matrix3x3 &operator =(const Matrix4x4 &mM);
 
-    inline Matrix3x3      operator +(const Matrix3x3 &mM) const;
-		inline void           operator +=(const Matrix3x3 &mM);
-		inline Matrix3x3      operator -() const;
-		inline Matrix3x3      operator -(const Matrix3x3 &mM) const;
-		inline void           operator -=(const Matrix3x3 &mM);
-		inline Matrix3x3      operator *(float fS) const;
-		inline void           operator *=(float fS);
-		inline Vector2        operator *(const Vector2 &vV) const;
-		inline Vector3        operator *(const Vector3 &vV) const;
+    inline Matrix3x3 operator +(const Matrix3x3 &mM) const;
+    inline void operator +=(const Matrix3x3 &mM);
+    inline Matrix3x3 operator -() const;
+    inline Matrix3x3 operator -(const Matrix3x3 &mM) const;
+    inline void operator -=(const Matrix3x3 &mM);
+    inline Matrix3x3 operator *(float fS) const;
+    inline void operator *=(float fS);
+    inline Vector2 operator *(const Vector2 &vV) const;
+    inline Vector3 operator *(const Vector3 &vV) const;
 
-    LPMATH_API Vector4    operator *(const Vector4 &vV) const;
-		LPMATH_API Matrix3x3  operator *(const Matrix3x3 &mM) const;
+    LPMATH_API Vector4 operator *(const Vector4 &vV) const;
+    LPMATH_API Matrix3x3  operator *(const Matrix3x3 &mM) const;
 
-    inline void           operator *=(const Matrix3x3 &mM);
-		inline Matrix3x3      operator /(float fS) const;
-		inline void           operator /=(float fS);
-		inline float          operator [](int nIndex) const;
-		inline float         &operator [](int nIndex);
-		inline float          operator ()(LupineCore::uint32 nRow = 0, LupineCore::uint32 nColumn = 0) const;
-		inline float         &operator ()(LupineCore::uint32 nRow = 0, LupineCore::uint32 nColumn = 0);
-		inline                operator float *();
-		inline                operator const float *() const;
+    inline void operator *=(const Matrix3x3 &mM);
+    inline Matrix3x3 operator /(float fS) const;
+    inline void operator /=(float fS);
+    inline float operator [](int nIndex) const;
+    inline float &operator [](int nIndex);
+    inline float operator ()(LupineCore::uint32 nRow = 0, LupineCore::uint32 nColumn = 0) const;
+    inline float &operator ()(LupineCore::uint32 nRow = 0, LupineCore::uint32 nColumn = 0);
+    inline operator float *();
+    inline operator const float *() const;
 
     inline bool IsZero() const;
     inline bool IsTrueZero() const;
@@ -113,8 +113,8 @@ namespace LupineMath
     inline void SetScaleMatrix(const Vector3 &vV);
 
     LPMATH_API void GetScale(float &fX, float &fY, float &fZ) const;
-		inline Vector3 GetScale() const;
-		inline void GetScale(float fV[]) const;
+    inline Vector3 GetScale() const;
+    inline void GetScale(float fV[]) const;
 
     LPMATH_API void FromEulerAngleX(float fAngleX);
     LPMATH_API void FromEulerAngleY(float fAngleY);
@@ -132,7 +132,7 @@ namespace LupineMath
 
     inline Matrix3x3 &SetShearing(float fShearXY, float fShearXZ,
                                   float fShearYX,float fShearYZ,
-    									            float fShearZX, float fShearZY);
+                                  float fShearZX, float fShearZY);
   };
 
 } // LupineMath
