@@ -86,8 +86,8 @@ namespace LupineCore
 
     protected:
       static const char *SkipWhiteSpace(const char *pszData, EEncoding nEncoding);
-		  static bool IsWhiteSpace(char c);
-		  static bool IsWhiteSpace(int c);
+      static bool IsWhiteSpace(char c);
+      static bool IsWhiteSpace(int c);
       static const char *ReadName(const char *pszData, String &sName, EEncoding nEncoding);
       static const char *ReadText(const char *pszData, String &sText, bool bTrimWhiteSpace, const char *pszEndTag, bool bCaseInsensitive, EEncoding nEncoding);
       static const char *GetEntity(const char *pszData, char *pszValue, int &nLength, EEncoding nEncoding);
